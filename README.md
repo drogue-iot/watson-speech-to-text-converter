@@ -1,7 +1,7 @@
 # IBM Watson speech-to-text converter for Knative
 
 [![CI](https://github.com/drogue-iot/watson-speech-to-text-converter/workflows/CI/badge.svg)](https://github.com/drogue-iot/watson-speech-to-text-converter/actions?query=workflow%3A%22CI%22)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/tag/drogue-iot/watson-speech-to-text-converter?sort=semver)](https://github.com/drogue-iot/watson-speech-to-text-converter/releases)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/tag/drogue-iot/watson-speech-to-text-converter?sort=semver)](https://github.com/orgs/drogue-iot/packages/container/package/watson-speech-to-text-converter)
 [![Matrix](https://img.shields.io/matrix/drogue-iot:matrix.org)](https://matrix.to/#/#drogue-iot:matrix.org)
 
 Converts audio payload to text, using *IBM Watson Speech to Text*.
