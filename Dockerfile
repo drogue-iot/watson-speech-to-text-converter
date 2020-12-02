@@ -14,7 +14,7 @@ RUN cargo build --release
 
 FROM registry.access.redhat.com/ubi8-minimal
 
-LABEL org.opencontainers.image.source="https://github.com/ctron/watson-speech-to-text-converter"
+LABEL org.opencontainers.image.source="https://github.com/drogue-iot/watson-speech-to-text-converter"
 
 COPY --from=builder /usr/src/target/release/watson-speech-to-text-converter /
 
