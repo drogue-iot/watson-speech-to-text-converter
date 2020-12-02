@@ -1,0 +1,25 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: watson-stt-converter
+  labels:
+    app.kubernetes.io/part-of: hey-rodney
+spec:
+  template:
+    spec:
+      containers:
+        - image: quay.io/ctrontesting/watson-speech-to-text-converter:latest
+          env:
+            - name: RUST_LOG
+              value: info
+          resources:
+            limits:
+              memory: 64Mi
+          volumeMounts:
+            - name: credentials
+              readOnly: true
+              mountPath: /etc/config
+      volumes:
+        - name: credentials
+          secret:
+            secretName: watson-sst-credentials
