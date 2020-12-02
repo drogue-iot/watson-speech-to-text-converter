@@ -12,6 +12,8 @@ spec:
           env:
             - name: RUST_LOG
               value: info
+            - name: ONLY_SUBJECTS
+              value: voice
           resources:
             limits:
               memory: 64Mi

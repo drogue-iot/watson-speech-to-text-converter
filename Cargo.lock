@@ -2348,10 +2348,12 @@ dependencies = [
  "env_logger",
  "envconfig",
  "log",
+ "mime",
  "reqwest",
  "serde",
  "serde_json",
  "snafu",
+ "url",
 ]
 
 [[package]]
