@@ -24,7 +24,7 @@ The output event will contain all information of the input event, with the follo
 ## Payload
 
 The payload must be an accepted audio format (with a matching mime type in the *data content type*).
-You can find more information about that in the section [Audio Formats](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-audio-formats).
+You can find more information about that in the section [Audio Formats](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-audio-formats)
 of IBM Watson.
 
 Of course, there is a special case. There are two different mime types for WAV
