@@ -127,6 +127,8 @@ async fn post_event(
     let from = req.to_event(payload).await?;
 
     if !filter.test(&from) {
+        // true, the next line may be annoying if you need to filter out many events
+        // on the other side, you should consider filtering out *before* hitting this service ;-)
         log::debug!("Filter did not match, skip...");
         return Ok(HttpResponse::NoContent().finish());
     }
